@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include impala_v2 *.css
+recursive-include impala_v2 *.csv
+recursive-include impala_v2 *.html
+recursive-include impala_v2 *.ico
+recursive-include impala_v2 *.js
+recursive-include impala_v2 *.json
+recursive-include impala_v2 *.md
+recursive-include impala_v2 *.png
+recursive-include impala_v2 *.py
+recursive-include impala_v2 *.svg
+recursive-include impala_v2 *.txt
+recursive-exclude impala_v2 *.pyc
