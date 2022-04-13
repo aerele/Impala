@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-04-12 09:23:37.784950",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "enable_email_notification",
+  "send__statement_email",
+  "period",
+  "date",
+  "ages_section",
+  "age_1",
+  "column_break_7",
+  "age_2",
+  "column_break_9",
+  "age_3",
+  "column_break_11",
+  "age_4"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "enable_email_notification",
+   "fieldtype": "Check",
+   "label": "Enable Email Notification"
+  },
+  {
+   "fieldname": "send__statement_email",
+   "fieldtype": "Button",
+   "label": "Send  Statement Email"
+  },
+  {
+   "fieldname": "period",
+   "fieldtype": "Select",
+   "label": "Period",
+   "options": "Daily\nWeekly\nMonthly\nYearly"
+  },
+  {
+   "depends_on": "eval:doc.period==\"Monthly\"",
+   "fieldname": "date",
+   "fieldtype": "Select",
+   "label": "date ",
+   "options": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31"
+  },
+  {
+   "fieldname": "ages_section",
+   "fieldtype": "Section Break",
+   "label": "Ages"
+  },
+  {
+   "default": "30",
+   "fieldname": "age_1",
+   "fieldtype": "Int",
+   "label": "Age 1"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "60",
+   "fieldname": "age_2",
+   "fieldtype": "Int",
+   "label": "Age 2"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "90",
+   "fieldname": "age_3",
+   "fieldtype": "Int",
+   "label": "Age 3"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "120",
+   "fieldname": "age_4",
+   "fieldtype": "Int",
+   "label": "Age 4"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2022-04-13 09:47:12.598440",
+ "modified_by": "Administrator",
+ "module": "Impala V2",
+ "name": "Statement Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

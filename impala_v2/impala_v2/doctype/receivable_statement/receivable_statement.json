@@ -1,0 +1,127 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-04-12 08:21:36.095297",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "age_1",
+  "column_break_2",
+  "from_date",
+  "age_2",
+  "column_break_4",
+  "to_date",
+  "age_3",
+  "column_break_6",
+  "customer",
+  "age_4",
+  "amended_from",
+  "section_break_13",
+  "statement"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "default": "30",
+   "fieldname": "age_1",
+   "fieldtype": "Data",
+   "label": "Age 1"
+  },
+  {
+   "default": "60",
+   "fieldname": "age_2",
+   "fieldtype": "Data",
+   "label": "Age 2"
+  },
+  {
+   "default": "90",
+   "fieldname": "age_3",
+   "fieldtype": "Data",
+   "label": "Age 3"
+  },
+  {
+   "default": "120",
+   "fieldname": "age_4",
+   "fieldtype": "Data",
+   "label": "Age 4"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Receivable Statement",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "statement",
+   "fieldtype": "Table",
+   "label": "Statement",
+   "options": "Receivable Statement  Table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-04-12 09:04:19.560248",
+ "modified_by": "Administrator",
+ "module": "Impala V2",
+ "name": "Receivable Statement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
